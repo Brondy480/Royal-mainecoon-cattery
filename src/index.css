@@ -1,0 +1,19 @@
+/* load base, components, theme and utilities so Tailwind sees everything */
+@import "tailwindcss";
+
+
+/* global font fallback */
+body {
+  font-family: 'Cinzel', serif;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.float-button {
+  animation: float 2s ease-in-out infinite;
+}
